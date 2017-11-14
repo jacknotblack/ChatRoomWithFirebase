@@ -3,7 +3,7 @@ pipeline:
     image: node:9.1.0
     commands:
       - npm install
-      - npm run test
+      - npm build
   # publish:
   #   image: plugins/docker
   #   repo: eisenxu/realtopper-app
