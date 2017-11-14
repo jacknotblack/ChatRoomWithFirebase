@@ -4,10 +4,3 @@ pipeline:
     commands:
       - npm install
       - npm build
-  # publish:
-  #   image: plugins/docker
-  #   repo: eisenxu/realtopper-app
-  #   secrets: [ docker_username, docker_password ]
-  #   tags:
-  #     - latest
-  #     - ${DRONE_COMMIT_SHA:0:8}
