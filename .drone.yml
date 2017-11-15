@@ -4,6 +4,10 @@ pipeline:
     commands:
       - npm install
       - npm run test
+  sonar:
+    image: SonarQube-server
+    commands:
+      - sonar-scanner
   build:
     image: node:9
     commands:
