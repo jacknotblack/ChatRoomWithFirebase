@@ -6,6 +6,7 @@ pipeline:
       - npm run test
   sonar:
     image: industrieco/sonarqube-server
+    pull: true
     commands:
       - sonar-scanner
   build:
