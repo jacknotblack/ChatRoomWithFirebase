@@ -5,7 +5,7 @@ pipeline:
       - npm install
       - npm run test
   sonar:
-    image: sonarcube
+    image: sonarqube
     pull: true
     commands:
       - sonar-scanner
