@@ -7,7 +7,7 @@ pipeline:
   sonar:
     image: docker
     commands:
-      - docker run -t -v $(pwd):/root/src --link sonarqube newtmitch/sonar-scanner 
+      - sudo docker run -t -v $(pwd):/root/src --link sonarqube newtmitch/sonar-scanner 
   build:
     image: node:9
     commands:
