@@ -1,6 +1,6 @@
-projectKey=my:project
-serverUrl=http://localhost:9000
+projectKey=MyProjectKey
+serverUrl=http://ab54709f.ngrok.io
 serverVersion=6.7.0.33306
-dashboardUrl=http://localhost:9000/dashboard/index/my:project
-ceTaskId=AV--sbACTDgq4DOwT8fA
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AV--sbACTDgq4DOwT8fA
+dashboardUrl=http://ab54709f.ngrok.io/dashboard/index/MyProjectKey
+ceTaskId=AV_D7n0XP4gvOz7M8HF2
+ceTaskUrl=http://ab54709f.ngrok.io/api/ce/task?id=AV_D7n0XP4gvOz7M8HF2
