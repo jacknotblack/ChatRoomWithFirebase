@@ -8,6 +8,8 @@ pipeline:
     image: docker
     commands:
       - sudo docker run -t -v $(pwd):/root/src --link sonarqube newtmitch/sonar-scanner 
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
   build:
     image: node:9
     commands:
