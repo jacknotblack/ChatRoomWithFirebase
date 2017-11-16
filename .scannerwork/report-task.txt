@@ -1,6 +1,6 @@
-projectKey=MyProjectKey
+projectKey=chatroom
 serverUrl=http://ab54709f.ngrok.io
 serverVersion=6.7.0.33306
-dashboardUrl=http://ab54709f.ngrok.io/dashboard/index/MyProjectKey
-ceTaskId=AV_D7n0XP4gvOz7M8HF2
-ceTaskUrl=http://ab54709f.ngrok.io/api/ce/task?id=AV_D7n0XP4gvOz7M8HF2
+dashboardUrl=http://ab54709f.ngrok.io/dashboard/index/chatroom
+ceTaskId=AV_EE-w-P4gvOz7M8HF_
+ceTaskUrl=http://ab54709f.ngrok.io/api/ce/task?id=AV_EE-w-P4gvOz7M8HF_
