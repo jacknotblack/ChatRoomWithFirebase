@@ -2,5 +2,5 @@ projectKey=chatroom
 serverUrl=http://ab54709f.ngrok.io
 serverVersion=6.7.0.33306
 dashboardUrl=http://ab54709f.ngrok.io/dashboard/index/chatroom
-ceTaskId=AV_EE-w-P4gvOz7M8HF_
-ceTaskUrl=http://ab54709f.ngrok.io/api/ce/task?id=AV_EE-w-P4gvOz7M8HF_
+ceTaskId=AV_ELolAP4gvOz7M8HGA
+ceTaskUrl=http://ab54709f.ngrok.io/api/ce/task?id=AV_ELolAP4gvOz7M8HGA

@@ -16,8 +16,6 @@ pipeline:
     privileged: true
     commands:
       - sonar-scanner -Dsonar.host.url=http://ab54709f.ngrok.io -Dsonar.projectKey=chatroom -Dsonar.projectName="chatroom" -Dsonar.projectVersion=1 -Dsonar.projectHome=/ 
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
   build:
     image: node:9
     commands:
