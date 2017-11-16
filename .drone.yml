@@ -15,7 +15,7 @@ pipeline:
     image: newtmitch/sonar-scanner
     privileged: true
     commands:
-      - sonar-scanner -Dsonar.host.url=http://ab54709f.ngrok.io -Dsonar.projectKey=chatroom -Dsonar.projectName="chatroom" -Dsonar.projectVersion=1 -Dsonar.projectHome=/ 
+      - sonar-scanner $(pwd):/root/src -Dsonar.host.url=http://ab54709f.ngrok.io -Dsonar.projectKey=chatroom -Dsonar.projectName="chatroom" -Dsonar.projectVersion=1 -Dsonar.projectHome=/ 
   build:
     image: node:9
     commands:
