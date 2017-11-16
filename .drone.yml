@@ -11,13 +11,13 @@ pipeline:
   #     - docker run -t -v $(pwd):/root/src newtmitch/sonar-scanner sonar-scanner -Dsonar.host.url=http://ab54709f.ngrok.io -Dsonar.projectKey=chatroom -Dsonar.projectName="chatroom" -Dsonar.projectVersion=1 -Dsonar.project.home=/ 
   #   volumes:
   #     - /var/run/docker.sock:/var/run/docker.sock
-    sonar:
-      image: newtmitch/sonar-scanner
-      privileged: true
-      commands:
-        - sonar-scanner -Dsonar.host.url=http://ab54709f.ngrok.io -Dsonar.projectKey=chatroom -Dsonar.projectName="chatroom" -Dsonar.projectVersion=1 -Dsonar.project.home=/ 
-      volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
+  sonar:
+    image: newtmitch/sonar-scanner
+    privileged: true
+    commands:
+      - sonar-scanner -Dsonar.host.url=http://ab54709f.ngrok.io -Dsonar.projectKey=chatroom -Dsonar.projectName="chatroom" -Dsonar.projectVersion=1 -Dsonar.project.home=/ 
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
   build:
     image: node:9
     commands:
