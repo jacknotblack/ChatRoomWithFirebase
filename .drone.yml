@@ -8,7 +8,7 @@ pipeline:
     image: docker
     privileged: true
     commands:
-      - docker run -t -v $(pwd):/root/src newtmitch/sonar-scanner sonar-scanner -Dsonar.host.url=http://ab54709f.ngrok.io 
+      - docker run -t -v $(pwd):/root/src newtmitch/sonar-scanner sonar-scanner \ -Dsonar.host.url=http://ab54709f.ngrok.io -Dsonar.projectKey=chatroom -Dsonar.projectName="chatroom" -Dsonar.projectVersion=1 -Dsonar.project.home=/ -Dsonar.sources=./src
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
   build:
