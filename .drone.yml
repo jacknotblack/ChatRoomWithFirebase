@@ -6,6 +6,7 @@ pipeline:
       - npm run test
   sonar:
     image: docker
+    privileged: true
     commands:
       - sudo docker run -t -v $(pwd):/root/src --link sonarqube newtmitch/sonar-scanner 
     volumes:
