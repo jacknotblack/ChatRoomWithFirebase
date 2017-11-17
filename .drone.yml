@@ -17,7 +17,7 @@ pipeline:
     commands:
       - sonar-scanner
     volumes:
-      - /src:/root/src
+      - root/src:/src
   build:
     image: node:9
     commands:
