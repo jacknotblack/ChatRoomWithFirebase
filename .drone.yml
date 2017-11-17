@@ -16,8 +16,6 @@ pipeline:
     privileged: true
     commands:
       - sonar-scanner
-    volumes:
-      - root/src:/src
   build:
     image: node:9
     commands:
